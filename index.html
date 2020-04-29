@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <title>AHDesenvolvimento</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row header fixed-top">
+                <div class="col-8 col-sm-6">
+                    <h1 class="logo">AHDesenvolvimento</h1>
+                </div>
+                <div class="col-4 col-sm-6">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button type="button" class="navbar-toggler" data-target="#menuMovel" data-toggle="collapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse" id="menuMovel">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown"><button class="nav-link dropdown-toggle btn" data-toggle="dropdown">projetos</button>
+                                    <div class="dropdown-menu bg-light">
+                                        <div class="dropdown-header">Finalizados</div>
+                                        <div class="controle">
+                                            <button class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modalProjetos">Sistema de gerenciamento de atividades</button>
+                                            <button class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modalProjetos">Sistema de controle interno - SCI</button>
+                                            <button class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modalProjetos">django1</button>
+                                            <button class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modalProjetos">django22</button>
+                                            <button class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modalProjetos">Portifólio 1º</button>
+                                            <button class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modalProjetos">Portifólio 2º</button>
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-header">Não finalizados</div>
+                                        
+                                        <button class="dropdown-item btn btn-primary disabled" data-toggle="modal" data-target="#modalProjetos">Sistema de gerenciamento de atividades(WEB)</button>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="#sobre" class="nav-link">sobre</a></li>
+                                <li class="nav-item"><a href="#contato" class="nav-link">contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Apresentação</h2>
+
+                    <p>Este site está sendo desenvolvido com dois propósitos:</p>
+                    <ol>
+                        <li>Utilizar conhecimentos web(JavaScript, HTML5, CCS3, Bootstrap4 e JQuery) que estou aprendendo para treinar</li>
+                        <li>Servir como portfólio, no qual eu irei colocar meus projetos</li>
+                    </ol>
+                    <p>OBS: Site ficará em constante desenvolvimento.</p>
+                </div>
+            </div>
+            <div class="row linha">
+                <div class="col-sm-12">
+                    <h2 id="projetos">Projetos</h2>
+                    <p>Nesta secção, irá conter alguns projetos do qual eu ajudei a desenvolver e projetos independentes</p>
+                </div>
+                <div class="row">
+                    <div class="borda col-lg-4" data-target="#modalProjetos" data-toggle="modal">
+                        <img src="imagens/Python.svg.png" width=50% alt="">
+                        <p class="centralizar-paragrafo">Sistema de gerenciamento de atividades</p>
+                    </div>
+
+                    <div class="borda col-lg-4" data-target="#modalProjetos" data-toggle="modal">
+                        <img src="imagens/Python.svg.png" width=50% alt="">
+                        <p class="centralizar-paragrafo">Sistema de controle interno - SCI</p>
+                    </div>
+
+                    <div class="borda col-lg-4" data-target="#modalProjetos" data-toggle="modal">
+                        <img src="imagens/Python.svg.png" width=50% alt="">
+                        <p class="centralizar-paragrafo">Meu primeiro site que eu coloquei no ar</p>
+                    </div>
+
+                    <div class="borda col-lg-4" data-target="#modalProjetos" data-toggle="modal">
+                        <img src="imagens/Python.svg.png" width=50% alt="">
+                        <p class="centralizar-paragrafo">Meu segundo site que eu coloquei no ar</p>
+                    </div>
+
+                    <div class="borda col-lg-4" data-target="#modalProjetos" data-toggle="modal">
+                        <img src="imagens/Python.svg.png" width=50% alt="">
+                        <p class="centralizar-paragrafo">Meu site de portifólio (1º versão)</p>
+                    </div>
+                    
+                    <div class="borda col-lg-4" data-target="#modalProjetos" data-toggle="modal">
+                        <img src="imagens/Python.svg.png" width=50% alt="">
+                        <p class="centralizar-paragrafo">Meu site de portifólio (2º versão)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row linha">
+                <div class="col-sm-12">
+                    <h2 id="sobre">Sobre mim</h2>
+                    <p>Me chamo Antonio Henrique, sou graduando de Análise e desenvolvimento de sistemas, pelo IFPI tenho 21 
+                        anos, atualmente eu me considero um backend junior, porém 
+                        pretendo me tonar um fullstack então estou estudando bastente
+                        frontend para tornar isso realidade.
+                    </p>
+                    <dl>
+                        <dt>Curiosidades</dt>
+                            <dd>
+                                Odeio java.
+                                <br>
+                                Por um curto periodo de tempo eu passei a gostar de C.
+                                <br>
+                                Acho o conteúdo de Estrutura de Dados muito interessante, porém acho desnecessário uma materia só para isso
+                            </dd>
+
+                        <dt>Porque a computação?</dt>
+                            <dd>É algo que eu quero desde criança, quando eu estava no meu terceiro ano acabei desenvolvendo uma vontade de cursar Engenharia Civil, mas decidi que queria computação mesmo.</dd>
+
+                        <dt>Tecnologias que tenho conhecimento</dt>
+                            <dd>Tkinter</dd>
+                            <dd>Python</dd>
+                            <dd>SQlite</dd>
+                            <dd>PostgreSQL</dd>
+                            <dd>Photoshop CC</dd>
+                            <dd>Illustrator CC</dd>
+
+                        <dt>Tecnologias que estou aprendendo</dt>
+                            <dd>HTML, CSS e JavaScript</dd>
+                            <dd>Jquery</dd>
+                            <dd>Bootstrap</dd>
+
+                        <dt>Tecnologias que desejo aprender</dt>
+                            <dd>PHP</dd>
+                            <dd>Flutter</dd>
+                            <dd>React native</dd>
+                    </dl>
+                </div>    
+            </div>
+            <div class="row linha">
+                <div class="col-sm-12">
+                    <h2 id="contato">Contato</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modalProjetos" data-toggle="modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title"></h4>
+                        <button type="button" data-dismiss="modal" class="close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row tipo">
+                            <h5 class="col-12">Tipo do projeto</h5>
+                            <p class="col-12"></p>
+                            
+                        </div>
+
+                        <div class="row equipe">
+                            <h5 class="col-12">Equipe</h5>
+                        </div>
+
+                        <div class="row objetivo">
+                            <h5 class="col-12">Objetivo</h5>
+                        </div>
+
+                        <div class="row tecnologias">
+                            <h5 class="col-12">Tecnologias utilizadas</h5>
+                        </div>
+
+                        <div class="row documentacao">
+                            <h5 class="col-12">Documentação</h5>
+                            <p class="col-12"></p>
+                        </div>
+
+                        <div class="row funcionamento">
+                            <h5 class="col-12">Funcionamento</h5>
+                            <p class="col-12"></p>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal">Sair</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!--
+                
+                <div class="row col-sm-12 col-lg-12 linha">
+                    <div class="col-lg-12">
+                        <h2 id="sobre">Sobre mim</h2>
+                        <p>Me chamo Antonio Henrique, sou graduando de Análise e desenvolvimento de sistemas, pelo IFPI tenho 21 
+                            anos, atualmente eu me considero um backend junior, porém 
+                            pretendo me tonar um fullstack então estou estudando bastente
+                            frontend para tornar isso realidade.
+                        </p>
+                        <dl>
+                            <dt>Curiosidades</dt>
+                                <dd>
+                                    Odeio java.
+                                    <br>
+                                    Por um curto periodo de tempo eu passei a gostar de C.
+                                    <br>
+                                    Acho o conteúdo de Estrutura de Dados muito interessante, porém acho desnecessário uma materia só para isso
+                                </dd>
+
+                            <dt>Porque a computação?</dt>
+                                <dd>É algo que eu quero desde criança, quando eu estava no meu terceiro ano acabei desenvolvendo uma vontade de cursar Engenharia Civil, mas decidi que queria computação mesmo.</dd>
+
+                            <dt>Tecnologias que tenho conhecimento</dt>
+                                <dd>Tkinter</dd>
+                                <dd>Python</dd>
+                                <dd>SQlite</dd>
+                                <dd>PostgreSQL</dd>
+                                <dd>Photoshop CC</dd>
+                                <dd>Illustrator CC</dd>
+
+                            <dt>Tecnologias que estou aprendendo</dt>
+                                <dd>HTML, CSS e JavaScript</dd>
+                                <dd>Jquery</dd>
+                                <dd>Bootstrap</dd>
+
+                            <dt>Tecnologias que desejo aprender</dt>
+                                <dd>PHP</dd>
+                                <dd>Flutter</dd>
+                                <dd>React native</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="row col-sm-12 col-lg-12 linha">
+                    <div class="col-lg-12">
+                        <h2 id="contato">Contato</h2>
+                    </div>
+                </div>
+                -->
+            </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery2.js"></script>
+        <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

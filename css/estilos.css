@@ -1,0 +1,71 @@
+.logo{
+    padding-top: 3%;
+    padding-left: 5%;
+    font-size: 225%;
+}
+
+dl dd {
+    padding-left: 5%;
+}
+
+.borda {
+    border: 3px yellow;
+    border-style: dashed;
+    height: 250px;
+}
+
+img, .centralizar-paragrafo {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.header{
+    background-color: thistle;
+    top: auto;
+    border-bottom: 1px solid blue;
+}
+
+ul li {
+    margin-left: 50px;
+}
+
+ul li a {
+    text-transform: uppercase;
+}
+
+ul button:hover{
+    background-color: tomato;
+}
+
+.header a:hover{
+    color: white;
+    background-color: tomato;
+    border: 1px solid;
+}
+
+
+.container-fluid{
+    padding-top: 65px;
+}
+
+.linha{
+    margin-top: 10px;
+    border-top: 1px solid blue;
+}
+
+.borda:hover{
+    background-color: red;
+    color: white;
+}
+
+body{
+    min-width: 500px;
+}
+
+.controle button:hover{
+    background-color: blue;
+}
