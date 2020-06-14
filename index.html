@@ -23,7 +23,7 @@
     
                         <div class="collapse navbar-collapse" id="menuMovel">
                             <ul class="navbar-nav">
-                                <li class="nav-item dropdown"><button class="nav-link dropdown-toggle btn" data-toggle="dropdown">projetos</button>
+                                <li class="nav-item dropdown"><button class="nav-link dropdown-toggle btn" data-toggle="dropdown">PROJETOS</button>
                                     <div class="dropdown-menu bg-light">
                                         <div class="dropdown-header">Finalizados</div>
                                         <div class="controle">
@@ -33,6 +33,8 @@
                                             <button class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modalProjetos">django22</button>
                                             <button class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modalProjetos">Portifólio 1º</button>
                                             <button class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modalProjetos">Portifólio 2º</button>
+                                            <button class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#modalProjetos">Delivery genérico</button>
+                                        
                                         </div>
                                         <div class="dropdown-divider"></div>
                                         <div class="dropdown-header">Não finalizados</div>
@@ -52,7 +54,7 @@
         </div>
 
         <div class="container-fluid">
-            <div class="row">
+            <div class="row linha apresentacao">
                 <div class="col-sm-12">
                     <h2>Apresentação</h2>
 
@@ -99,6 +101,11 @@
                         <img src="imagens/Python.svg.png" width=50% alt="">
                         <p class="centralizar-paragrafo">Meu site de portifólio (2º versão)</p>
                     </div>
+
+                    <div class="borda col-lg-4" data-target="#modalProjetos" data-toggle="modal">
+                        <img src="imagens/Python.svg.png" width=50% alt="">
+                        <p class="centralizar-paragrafo">Delivery genérico</p>
+                    </div>
                 </div>
             </div>
 
@@ -106,23 +113,11 @@
                 <div class="col-sm-12">
                     <h2 id="sobre">Sobre mim</h2>
                     <p>Me chamo Antonio Henrique, sou graduando de Análise e desenvolvimento de sistemas, pelo IFPI tenho 21 
-                        anos, atualmente eu me considero um backend junior, porém 
-                        pretendo me tonar um fullstack então estou estudando bastente
+                        anos, atualmente eu me considero um desenvolvedor backend, porém 
+                        pretendo me tonar um fullstack então estou estudando bastante
                         frontend para tornar isso realidade.
                     </p>
                     <dl>
-                        <dt>Curiosidades</dt>
-                            <dd>
-                                Odeio java.
-                                <br>
-                                Por um curto periodo de tempo eu passei a gostar de C.
-                                <br>
-                                Acho o conteúdo de Estrutura de Dados muito interessante, porém acho desnecessário uma materia só para isso
-                            </dd>
-
-                        <dt>Porque a computação?</dt>
-                            <dd>É algo que eu quero desde criança, quando eu estava no meu terceiro ano acabei desenvolvendo uma vontade de cursar Engenharia Civil, mas decidi que queria computação mesmo.</dd>
-
                         <dt>Tecnologias que tenho conhecimento</dt>
                             <dd>Tkinter</dd>
                             <dd>Python</dd>
@@ -140,14 +135,26 @@
                             <dd>PHP</dd>
                             <dd>Flutter</dd>
                             <dd>React native</dd>
+                        <dt>Serviçoes oferecidos</dt>
+                            <dd>Sistemas de Delivery</dd>
+                            <dd>Sistemas de Agendamento</dd>
+                            <dd>Sites de portifólio semelhantes a esse</dd>
                     </dl>
                 </div>    
             </div>
-            <div class="row linha">
-                <div class="col-sm-12">
-                    <h2 id="contato">Contato</h2>
+            <center>
+                <div class="row linha footer">
+                    <div class="col-sm-12">
+                        <h2 id="contato">Contato</h2>
+                        <small>Email: <strong>antoniohenriquedd15@gmail.com</strong></small>
+                        <br>
+                        <small>Telefone: <strong>Por enquanto sem</strong></small>
+                        <br>
+                        <small>Github: <a href="https://github.com/ahdesenvolvimento"><strong>https://github.com/ahdesenvolvimento</strong></a></small>
+
+                    </div>
                 </div>
-            </div>
+            </center>
         </div>
         
         <div class="modal fade" id="modalProjetos" data-toggle="modal">
@@ -184,6 +191,11 @@
                         <div class="row funcionamento">
                             <h5 class="col-12">Funcionamento</h5>
                             <p class="col-12"></p>
+                        </div>
+
+                        <div class="row github">
+                            <h5 class="col-12">Github</h5>
+                            
                         </div>
 
                     </div>

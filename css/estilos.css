@@ -9,8 +9,8 @@ dl dd {
 }
 
 .borda {
-    border: 3px yellow;
-    border-style: dashed;
+    border: 3px;
+    border-style: groove;
     height: 250px;
 }
 
@@ -20,8 +20,6 @@ img, .centralizar-paragrafo {
     text-align: center;
     cursor: pointer;
 }
-
-
 
 .header{
     background-color: thistle;
@@ -47,16 +45,17 @@ ul button:hover{
     border: 1px solid;
 }
 
-
-.container-fluid{
-    padding-top: 65px;
-}
-
 .linha{
-    margin-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
     border-top: 1px solid blue;
+    background-color: #f1f1f1;
 }
 
+.apresentacao{
+    padding-top: 75px;
+    border-top: 0px;
+}
 .borda:hover{
     background-color: red;
     color: white;

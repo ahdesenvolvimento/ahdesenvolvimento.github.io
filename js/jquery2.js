@@ -12,7 +12,7 @@ $(function(){
           scrollTop: targetOffset - 70
         }, 500);
     });
-    
+    alert($('.header').height())
 
     function generico(){
         $('.objetivo p').remove();
@@ -20,6 +20,7 @@ $(function(){
         $('.equipe li').remove();
         $('.documentacao p').remove();
         $('.funcionamento a').remove();
+        $('.github a').remove();
     }
 
     $('.borda:first-child').click(function(){
@@ -82,6 +83,16 @@ $(function(){
         organizar();
     });
 
+    $('.borda:nth-child(7)').click(function(){
+        contagem = 7;
+        organizar();
+    });
+
+    $('.controle .dropdown-item:nth-child(7)').click(function(){
+        contagem = 7;
+        organizar();
+    });
+
     function organizar(){
         if (contagem == 1){
             aparecer();
@@ -95,6 +106,8 @@ $(function(){
             $(".equipe li").css("display", 'block');
             $('.objetivo').append('<p class="col-12">Este software foi feito como projeto final da materia de Engenharia de Software I, no periodo 2019.2, tem como objetivo gerenciar atividades ao decorrer da disciplina.</p>');
             $('.tecnologias').append('<p class="col-12">Frontend - Tkinter <br> Backend - Python <br> Banco de dados - SQLite3</p>')     
+            $('.github').append('<a href="" class="col-12"></a>')     
+        
         }
         else if (contagem == 2){
             generico();
@@ -106,6 +119,7 @@ $(function(){
             $('.equipe li').css("display", 'block');
             $('.objetivo').append('<p class="col-12">Este software foi feito com o intuito de controle de estoque</p>');
             $('.tecnologias').append('<p class="col-12">Frontend - Tkinter <br> Backend - Python <br> Banco de dados - SQLite3</p>');
+            $('.github').append('<a href="https://github.com/ahdesenvolvimento/controlefinanceiro" class="col-12">https://github.com/ahdesenvolvimento/controlefinanceiro</a>')  
         }
         else if (contagem == 3){
             generico();
@@ -117,6 +131,7 @@ $(function(){
             $('.tecnologias').append('<p class="col-12">Django, CSS, HTML e SQLite3</p>')
             $('.documentacao').append('<p class="col-12">Por ser um projeto simples, com o objetivo de colocar conhecimentos em prática, não possui documentação.</p>')
             $('.funcionamento').append('<a class="col-12" href="https://django1-ahdev.herokuapp.com/">Link do site</a>')
+            $('.github').append('<a href="https://github.com/ahdesenvolvimento/primeirosite" class="col-12">https://github.com/ahdesenvolvimento/primeirosite</a>')   
         }
         else if (contagem == 4){
             generico();
@@ -128,6 +143,7 @@ $(function(){
             $('.tecnologias').append('<p class="col-12">Django, CSS, HTML e SQLite3</p>')
             $('.documentacao').append('<p class="col-12">Por ser um projeto simples, com o objetivo de colocar conhecimentos em prática, não possui documentação.</p>')
             $('.funcionamento').append('<a class="col-12" href="https://django22-ahdev.herokuapp.com/">Link do site</a>')
+            $('.github').append('<a href="https://github.com/ahdesenvolvimento/segundosite" class="col-12">https://github.com/ahdesenvolvimento/segundosite</a>')   
         }
         else if (contagem == 5){
             generico();
@@ -139,6 +155,7 @@ $(function(){
             $('.tecnologias').append('<p class="col-12">Django, HTML, CSS</p>');
             $('.documentacao').append('<p class="col-12">Este projeto não apresenta documentação.</p>')
             $('.funcionamento').append('<a class="col-12" href="https://ahdesenvolvimento.herokuapp.com/">Link do site</a>')
+            $('.github').append('<a href=""class="col-12"></a>')   
         }
         else if (contagem == 6){
             generico();
@@ -148,10 +165,23 @@ $(function(){
             $(".equipe li").css("display", 'block');
             $('.objetivo').append('<p class="col-12">Como desenvolvedor, nada melhor do que criar um site para ser utilizado como portfólio para demonstrar a todos uma visão sobre mim e meus projetos, porém este projeto foi desenvolvido inteiramente no frontend.</p>')
             $('.tecnologias').append('<p class="col-12">HTML, CSS, JavaScript, BootStrap4, JQuery</p>');
-            $('.documentacao').append('<p class="col-12">Este projeto não apresenta documentação.</p>')
-            $('.funcionamento').append('<a class="col-12" href="index.html">Link do site</a>')
+            $('.documentacao').append('<p class="col-12">Este projeto não apresenta documentação.</p>');
+            $('.funcionamento').append('<a class="col-12" href="index.html">Link do site</a>');
+            $('.github').append('<a href="https://github.com/ahdesenvolvimento/ahdesenvolvimento.github.io" class="col-12">https://github.com/ahdesenvolvimento/ahdesenvolvimento.github.io</a>')   
         }
-    }
+        else if (contagem == 7){
+            generico();
+            $('h4').text('Delivery genérico');
+            $('.tipo p').text('Aplicação web');
+            $('.equipe').append('<li class="col-12">Antonio Henrique</li>');
+            $(".equipe li").css("display", 'block');
+            $('.objetivo').append('<p class="col-12">Principal objetivo foi treinar meus conhecimentos sobre Django, mas também tem o objetivo de servir como um sistema para pequenos negócios de delivery, OBS: Ainda está em desenvolvimento</p>');
+            $('.tecnologias').append('<p class="col-12">HTML, CSS, JavaScript, BootStrap4, JQuery, Python(Django), SQLite (Por enquanto)</p>');
+            $('.documentacao').append('<p class="col-12">Quando finalizar, irei disponibilizar.</p>')
+            $('.funcionamento').append('<a class="col-12" href="https://projetodogueria.herokuapp.com/">Link do site (1º Versão)</a>');
+            $('.github').append('<a href="https://github.com/ahdesenvolvimento/delivery_generico" class="col-12">https://github.com/ahdesenvolvimento/delivery_generico</a>')   
+        }
+    };
 
 
     /*
