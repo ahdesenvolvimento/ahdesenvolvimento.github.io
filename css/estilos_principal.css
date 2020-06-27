@@ -16,6 +16,7 @@ html, body{
     margin: 10%;
     transform: translateX(-50%);
     background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .conteudo-sobre{
@@ -38,7 +39,10 @@ html, body{
     transform: translateX(-50%) translateY(-50%);
 }
 
-
+.navbar ul li a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2e;
+}
 .footer{
     position: absolute;
     bottom: 0;
@@ -46,9 +50,7 @@ html, body{
     left: 50%;
     transform: translateX(-50%);
 }
-#github{
-    border-radius: 50%;
-}
+
 #github:hover{
 
     filter: contrast(200%);
@@ -57,7 +59,8 @@ html, body{
     text-align: center;
     padding: 5% 2% 10% 2%;
     position: relative;
-    border: 1px solid red;
+    height: 225px;
+
 }
 
 .hover p{
