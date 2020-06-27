@@ -13,12 +13,7 @@ $(function(){
         }, 500);
     });
    // alert($('.header').height())
-
-    $('.alterar').click(function(){
-        $('.layout-um').hide();
-        $('.layout-dois').show();
-    });
-    
+    //alert($('.em-desenvolvimento .dropdown-item').length);
     function generico(){
         $('.objetivo p').remove();
         $('.tecnologias p').remove();
@@ -28,75 +23,77 @@ $(function(){
         $('.github a').remove();
     }
 
-    $('.borda:first-child').click(function(){
+    $('.hover:nth-child(5)').click(function(){
         contagem = 1;
-        organizar();
-    });
-    
-    $('.controle .dropdown-item:nth-child(1)').click(function(){
-        contagem = 1;
-        organizar();
-    });
-
-    $('.borda:nth-child(2)').click(function(){
-        contagem = 2;
         organizar();
     });
     
     $('.controle .dropdown-item:nth-child(2)').click(function(){
-        contagem = 2;
+        contagem = 1;
         organizar();
     });
 
-    $('.borda:nth-child(3)').click(function(){
-        contagem = 3;
+    $('.hover:nth-child(6)').click(function(){
+        contagem = 2;
         organizar();
     });
     
     $('.controle .dropdown-item:nth-child(3)').click(function(){
-        contagem = 3;
+        contagem = 2;
+     
         organizar();
     });
 
-    $('.borda:nth-child(4)').click(function(){
-        contagem = 4;
+    $('.hover:nth-child(7)').click(function(){
+        contagem = 3;
         organizar();
     });
     
     $('.controle .dropdown-item:nth-child(4)').click(function(){
-        contagem = 4;
+        contagem = 3;
         organizar();
     });
 
-    $('.borda:nth-child(5)').click(function(){
-        contagem = 5;
+    $('.hover:nth-child(8)').click(function(){
+        contagem = 4;
         organizar();
     });
     
     $('.controle .dropdown-item:nth-child(5)').click(function(){
-        contagem = 5;
+        contagem = 4;
         organizar();
     });
 
-    $('.borda:nth-child(6)').click(function(){
-        contagem = 6;
+    $('.hover:nth-child(9)').click(function(){
+        contagem = 5;
         organizar();
     });
     
     $('.controle .dropdown-item:nth-child(6)').click(function(){
+        contagem = 5;
+        organizar();
+    });
+
+    $('.hover:nth-child(10)').click(function(){
+        contagem = 6;
+        organizar();
+    });
+    
+    $('.controle .dropdown-item:nth-child(7)').click(function(){
         contagem = 6;
         organizar();
     });
 
-    $('.borda:nth-child(7)').click(function(){
+    $('.hover:nth-child(11)').click(function(){
         contagem = 7;
         organizar();
     });
 
-    $('.controle .dropdown-item:nth-child(7)').click(function(){
+    $('.em-desenvolvimento button:nth-child(3)').click(function(){
         contagem = 7;
         organizar();
     });
+
 
     function organizar(){
         if (contagem == 1){
@@ -187,127 +184,6 @@ $(function(){
             $('.github').append('<a href="https://github.com/ahdesenvolvimento/delivery_generico" class="col-12">https://github.com/ahdesenvolvimento/delivery_generico</a>')   
         }
     };
-
-
-    /*
-    $('.borda img').click(function(){
-        $('#modalProjetos').on('shown.bs.modal', function(){
-            $('body').css('background-color', 'blue');
-        })
-    })
-    
-    $('#modalProjetos').on('hide.bs.modal', function(){
-        $('body').css('background-color', 'blue');
-    });
-    */
-    $('div').click(function(){
-        console.log($('div[class]'));
-        if ($('div[class]') == ('.borda')){
-            alert('meu ovo');
-        }
-    });
-    
-    /*
-    $('button:nth-child(2)').click(function(){
-        $('#meumodal').on('shown.bs.modal', function (e) {
-            $('#meuovo').css('background-color', 'blue');
-            $('p').text('eqwojeqwk');
-          });
-    });
-
-    $('button:nth-child(3)').click(function(){
-        $('#modalProjetos').on('shown.bs.modal', function (e) {
-            $('#modalProjetos').css('background-color', 'blue');
-            $('p').text('eqwoj512521eqwk');
-          });
-    });
-    */
-    $('.janela2').click(contar);
-    function contar(){
-        alert($('.dropdown-menu button').length);
-    }
-
-    function tamanho(){
-        alert($('.header').height());
-        alert($(document).width());
-        alert($(window).width());
-
-    }
-
-    
-    /*Funções referente ao segundo layout*/
-    
-    $('.hover:first-child').click(function(){
-        alert('hnhnn to aqui')
-        contagem = 1;
-        organizar();
-    });
-    
-    $('.controle .dropdown-item:nth-child(1)').click(function(){
-        contagem = 1;
-        organizar();
-    });
-
-    $('img:nth-child(2)').click(function(){
-        alert('ja to aqui')
-        contagem = 2;
-        organizar();
-    });
-    
-    $('.controle .dropdown-item:nth-child(2)').click(function(){
-        contagem = 2;
-        organizar();
-    });
-
-    $('.hover img:nth-child(3)').click(function(){
-        contagem = 3;
-        organizar();
-    });
-    
-    $('.controle .dropdown-item:nth-child(3)').click(function(){
-        contagem = 3;
-        organizar();
-    });
-
-    $('.borda img:nth-child(4)').click(function(){
-        contagem = 4;
-        organizar();
-    });
-    
-    $('.controle .dropdown-item:nth-child(4)').click(function(){
-        contagem = 4;
-        organizar();
-    });
-
-    $('.borda img:nth-child(5)').click(function(){
-        contagem = 5;
-        organizar();
-    });
-    
-    $('.controle .dropdown-item:nth-child(5)').click(function(){
-        contagem = 5;
-        organizar();
-    });
-
-    $('.borda img:nth-child(6)').click(function(){
-        contagem = 6;
-        organizar();
-    });
-    
-    $('.controle .dropdown-item:nth-child(6)').click(function(){
-        contagem = 6;
-        organizar();
-    });
-
-    $('.borda img:nth-child(7)').click(function(){
-        contagem = 7;
-        organizar();
-    });
-
-    $('.controle .dropdown-item:nth-child(7)').click(function(){
-        contagem = 7;
-        organizar();
-    });
     
 });
 
