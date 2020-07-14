@@ -8,6 +8,24 @@
         <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
         <title>AHDesenvolvimento</title>
+        <script>
+            function listar(valor){
+                if (valor == 'python'){
+                    
+                    $('.python').show();
+                    $('.javascript').hide();
+    
+                }else if(valor == 'javascript'){
+                    $('.javascript').show();
+                    $('.python').hide();
+                
+                }else if(valor == 'relevancia'){
+                    $('.javascript').hide();
+                    $('.python').hide();
+                    $('.relevante').show();
+                }
+            }
+        </script>
     </head>
     <body>
         
@@ -46,6 +64,7 @@
                         <div class="dropdown-menu">
                             <div class="controle">
                                 <div class="dropdown-header">Finalizados</div>
+                                
                                 <button class="dropdown-item" data-target="#modalProjetos" data-toggle="modal">Sistema de gerenciamento de atividades</button>
                                 <button class="dropdown-item" data-target="#modalProjetos" data-toggle="modal">Sistema de controle interno - SCI</button>
                                 <button class="dropdown-item" data-target="#modalProjetos" data-toggle="modal">Django1</button>
@@ -66,38 +85,55 @@
                         </div>
                     </div>
                 </div>
-    
-                <div class="hover col-sm-12 col-md-4 col-lg-4 border" data-target="#modalProjetos" data-toggle="modal">
-                    <img src="imagens/Python.svg.png" width=50% alt="" class="img-fluid">
-                    <p class="centralizar-paragrafo 1">Sistema de gerenciamento de atividades</p>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Filtrar por</button>
+                        <div class="dropdown-menu">
+                            <div class="controle">
+                                <div class="dropdown-header">Filtros</div>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item" value="relevancia" onclick="listar(value);">Relevância</button>
+                                <button class="dropdown-item" value="python" onclick="listar(value);">Python(Django)</button>
+                                <button class="dropdown-item" value="javascript" onclick="listar(value);">Javascript(jquery)</button>
+     
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="hover col-sm-12 col-md-4 col-lg-4 border" data-target="#modalProjetos" data-toggle="modal">
+
+    
+                <div class="hover col-sm-12 col-md-4 col-lg-4 border python relevante" data-target="#modalProjetos" data-toggle="modal">
+                    <img src="imagens/Python.svg.png" width=50% alt="" class="img-fluid">
+                    <p class="centralizar-paragrafo 1" id="1">Sistema de gerenciamento de atividades</p>
+                </div>
+
+                <div class="hover col-sm-12 col-md-4 col-lg-4 border python relevante" data-target="#modalProjetos" data-toggle="modal">
                     <img src="imagens/Python.svg.png" width=50% alt="" class="img-fluid">
                     <p class="centralizar-paragrafo">Sistema de controle interno - SCI</p>
                 </div>
 
-                <div class="hover col-sm-12 col-md-4 col-lg-4 border" data-target="#modalProjetos" data-toggle="modal">
+                <div class="hover col-sm-12 col-md-4 col-lg-4 border python" data-target="#modalProjetos" data-toggle="modal">
                     <img src="imagens/Python.svg.png" width=50% alt="" class="img-fluid">
                     <p class="centralizar-paragrafo">Meu primeiro site que eu coloquei no ar</p>
                 </div>
 
-                <div class="hover col-sm-12 col-md-4 col-lg-4 border" data-target="#modalProjetos" data-toggle="modal">
+                <div class="hover col-sm-12 col-md-4 col-lg-4 border python" data-target="#modalProjetos" data-toggle="modal">
                     <img src="imagens/Python.svg.png" width=50% alt="" class="img-fluid">
                     <p class="centralizar-paragrafo">Meu segundo site que eu coloquei no ar</p>
                 </div>
 
-                <div class="hover col-sm-12 col-md-4 col-lg-4 border" data-target="#modalProjetos" data-toggle="modal">
+                <div class="hover col-sm-12 col-md-4 col-lg-4 border python relevante" data-target="#modalProjetos" data-toggle="modal">
                     <img src="imagens/Python.svg.png" width=50% alt="" class="img-fluid">
                     <p class="centralizar-paragrafo">Meu site de portifólio (1º versão)</p>
                 </div>
                 
-                <div class="hover col-sm-12 col-md-4 col-lg-4 border" data-target="#modalProjetos" data-toggle="modal">
+                <div class="hover col-sm-12 col-md-4 col-lg-4 border javascript relevante" data-target="#modalProjetos" data-toggle="modal">
                     <img src="imagens/js.png" width=50% alt="" class="img-fluid">
                     <p class="centralizar-paragrafo">Meu site de portifólio (2º versão)</p>
                 </div>
 
-                <div class="hover col-sm-12 col-md-4 col-lg-4 border" data-target="#modalProjetos" data-toggle="modal">
+                <div class="hover col-sm-12 col-md-4 col-lg-4 border python relevante" data-target="#modalProjetos" data-toggle="modal">
                     <img src="imagens/Python.svg.png" width=50% alt="" class="img-fluid">
                     <p class="centralizar-paragrafo">Delivery genérico</p>
                 </div>

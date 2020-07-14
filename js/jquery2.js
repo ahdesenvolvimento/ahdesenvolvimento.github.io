@@ -27,7 +27,9 @@ $(function(){
         $('.funcionamento a').remove();
         $('.github a').remove();
     }
-
+    $('#entrada').keypress(function(e){
+        $('#um').hide();
+    })
     $('.borda:first-child').click(function(){
         contagem = 1;
         organizar();
